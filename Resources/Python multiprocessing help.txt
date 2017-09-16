@@ -1,0 +1,29 @@
+PYTHON
+
+Parallel computing in python
+
+https://stackoverflow.com/questions/10721915/shared-memory-objects-in-
+multiprocessing
+
+if __name__==‘__main__’:
+
+https://www.youtube.com/watch?v=sugvnHA7ElY
+
+process and queue
+
+https://www.youtube.com/watch?v=sp7EhjLkFY4
+
+Sharing read only data between processes in python multiprocessing
+
+https://stackoverflow.com/questions/17785275/share-large-read-only-numpy-array-between-multiprocessing-processes
+
+https://stackoverflow.com/questions/5549190/is-shared-readonly-data-copied-to-different-processes-for-multiprocessing
+
+The link below is nice and comprehensive:
+http://eli.thegreenplace.net/2012/01/16/python-parallelizing-cpu-bound-tasks-with-multiprocessing/
+The above link refers to : http://www.dabeaz.com/GIL/
+
+https://rcc.uchicago.edu/docs/tutorials/kicp-tutorials/running-jobs.html
+
+Don’t call q.get() after q.join() —> Results in deadlock and the code freezes at q.join()
+https://stackoverflow.com/questions/31665328/python-3-multiprocessing-queue-deadlock-when-calling-join-before-the-queue-is-em
