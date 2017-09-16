@@ -20,7 +20,7 @@ def worker(pix_list,power):
 		
 
 
-nside=128 ; lmin=2 ; lmax=3*nside ; discsize=5. # degrees
+nside=256 ; lmin=2 ; lmax=3*nside ; discsize=5. # degrees
 npix=h.nside2npix(nside)
 ell=np.linspace(lmax,lmax,lmax-lmin+1)
 cl=ell**-2.5
@@ -33,7 +33,7 @@ pindex=arange(npix)
 procs=[]
 
 def main():
-	power=mp.Array("d",npix)
+	power=mp.Array("d",npix,lock=False)
 	procs=[]
 	for i in range(nprocs):
 		p=mp.Process(target=worker,args=(pindex[i*pchunk:(i+1)*pchunk],power))
