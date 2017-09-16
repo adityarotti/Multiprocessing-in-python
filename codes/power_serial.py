@@ -13,7 +13,7 @@ def return_avg_power(cpixel,discsize,nside):
 	return np.sum(data[spixel]**2.)/float(size(spixel))
 
 
-nside=256 ; lmin=2 ; lmax=3*nside ; discsize=5. # degrees
+nside=128 ; lmin=2 ; lmax=3*nside ; discsize=5. # degrees
 ell=np.linspace(lmax,lmax,lmax-lmin+1)
 cl=ell**-2.5
 np.random.seed(0) ; data=h.synfast(cl,nside)

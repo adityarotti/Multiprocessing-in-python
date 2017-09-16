@@ -20,7 +20,7 @@ def worker(pix_list,power):
 		
 
 
-nside=256 ; lmin=2 ; lmax=3*nside ; discsize=5. # degrees
+nside=128 ; lmin=2 ; lmax=3*nside ; discsize=5. # degrees
 npix=h.nside2npix(nside)
 ell=np.linspace(lmax,lmax,lmax-lmin+1)
 cl=ell**-2.5
