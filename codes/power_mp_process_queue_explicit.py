@@ -29,7 +29,7 @@ power=zeros(data.size,float)
 nprocs=8
 pchunk=h.nside2npix(nside)/nprocs
 pindex=arange(h.nside2npix(nside))
-print pchunk,pindex
+#print pchunk,pindex
 procs=[]
 
 def main():
@@ -92,8 +92,8 @@ if __name__=="__main__":
 	t1=time.time()
 	result=main()
 	print (time.time()-t1)
-	h.mollview(result)
-	h.mollview(data)
+	#h.mollview(result)
+	#h.mollview(data)
 
 
 
