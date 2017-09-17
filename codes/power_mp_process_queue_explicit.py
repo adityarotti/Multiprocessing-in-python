@@ -21,7 +21,7 @@ def worker(pix_list,out_q):
 
 
 nside=256 ; lmin=2 ; lmax=3*nside ; discsize=5. # degrees
-ell=np.linspace(lmax,lmax,lmax-lmin+1)
+ell=np.linspace(lmin,lmax,lmax-lmin+1)
 cl=ell**-2.5
 np.random.seed(0) ; data=h.synfast(cl,nside,verbose=False)
 power=zeros(data.size,float)
